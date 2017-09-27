@@ -14,7 +14,7 @@ function getFirstSelector(selector) {
  }
 
 function deepestChild() {
-  var container = document.querySelector("#grand-node");
+  var container = document.querySelector("grand-node");
   var childContainer = container.child[0];
   while (childContainer) {
     container = childContainer;
@@ -22,4 +22,3 @@ function deepestChild() {
   }
   return container;
   }
-
