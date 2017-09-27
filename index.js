@@ -12,3 +12,14 @@ function getFirstSelector(selector) {
      nList[i].innerHTML = parseInt(nList[i].innerHTML) + n;
    }
  }
+
+function deepestChild() {
+  var container = document.querySelector("#grand-node");
+  var childContainer = container.child[0];
+  while (childContainer) {
+    container = childContainer;
+    childContainer = container.children[0];
+  }
+  return container;
+  }
+}
